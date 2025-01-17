@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-image: url("/Assets/Images/Header.png");
+  background-image: url("../Assets/Images/Header.png");
   background-size: cover;
   background-position: center;
 }
@@ -301,4 +301,16 @@ footer .copyright a {
 }
 .shop .row .col-md-6 h3 .btn-primary a {
   text-decoration: none;
+}
+@media only screen and (max-width: 767px) {
+  body .vertical-rule {
+    display: none;
+  }
+  .faq .row .col-md-4 img {
+    display: none;
+  }
+  .testimonial .row .images .row .col-md-6 {
+    display: flex;
+    flex-direction: row !important;
+  }
 }/*# sourceMappingURL=styles.css.map */

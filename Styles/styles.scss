@@ -100,7 +100,7 @@ body {
 }
 
 header {
-  background-image: url('/Assets/Images/Header.png');
+  background-image: url('../Assets/Images/Header.png');
   background-size: cover;
   background-position: center;
 
@@ -444,4 +444,32 @@ footer {
 @media only screen and (max-width: 1024px) {
 }
 @media only screen and (max-width: 767px) {
+  body {
+    .vertical-rule {
+      display: none;
+    }
+  }
+
+  .faq {
+    .row {
+      .col-md-4 {
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .testimonial {
+    .row {
+      .images {
+        .row {
+          .col-md-6 {
+            display: flex;
+            flex-direction: row !important;
+          }
+        }
+      }
+    }
+  }
 }
